@@ -1,0 +1,60 @@
+/* Hero */
+
+.overlay {
+    max-width: 1600px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image:
+        linear-gradient(var(--overlay-color),
+            var(--overlay-color)),
+        url("../images/img/hero-photo.jpg ");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero {
+    text-align: center;
+    background-color: var(--hero-bcg-color);
+}
+
+.hero__box {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero__title {
+    color: var(--secondary-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero__button {
+    display: inline-block;
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+
+    color: var(--secondary-text-color);
+    background-color: var(--interactive-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border-color: transparent;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color var(--transition-duration) var(--transition-timing-function);
+    
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color-shadow);
+        transition: background-color var(--transition-duration) var(--transition-timing-function);
+    }
+}
+

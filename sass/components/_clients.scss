@@ -1,0 +1,39 @@
+/* Our clients */
+.client {
+    @extend %section;
+}
+
+.client__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.client__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-color);
+    border-radius: 0px 0px 4px 4px;
+    transition: border var(--transition-duration) var(--transition-timing-function);
+    &:hover,
+    &:focus {
+        border-color: var(--interactive-color);
+        transition: border-color var(--transition-duration) var(--transition-timing-function);
+    }
+}
+
+.client__svg {
+    fill: var(--icon-color);
+    transition: fill var(--transition-duration) var(--transition-timing-function);
+    .client__icon:hover &,
+    .client__icon:focus & {
+        fill: var(--interactive-color);
+        transition: fill var(--transition-duration) var(--transition-timing-function);
+    }
+}
+
+
+

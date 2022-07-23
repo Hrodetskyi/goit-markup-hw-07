@@ -1,0 +1,74 @@
+/* Contact */
+
+.contact {
+
+    color: var(--secondary-text-color);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+}
+
+footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--hero-bcg-color);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contact__address {
+    display: inline-block;
+    margin-top: 9px;
+
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+/* Join */
+
+.join {
+    width: 206px;
+}
+
+.join__list {
+    margin-top: 0;
+}
+
+.join__text {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 206px;
+    color: var(--secondary-text-color);
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.join__social {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    background-color: #44454E;
+    transition: background-color var(--transition-duration) var(--transition-timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--interactive-color);
+        transition: background-color var(--transition-duration) var(--transition-timing-function);
+    }
+}
+
+.join__svg {
+    margin: 12px;
+    fill: var(--secondary-text-color);
+}
+

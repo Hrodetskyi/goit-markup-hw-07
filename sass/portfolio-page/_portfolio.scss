@@ -1,0 +1,14 @@
+/* Portfolio.html */
+.portfolio-main {
+    @extend %section;
+}
+
+.no-gap {
+    display: block;
+}
+
+/* Main portfolio */
+
+.invisible {
+    visibility: hidden;
+}

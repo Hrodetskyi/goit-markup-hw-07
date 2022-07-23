@@ -1,0 +1,64 @@
+/* Site-nav */
+.site-nav {
+    background-color: var(--primary-bcg-color);
+    border-bottom: 1px solid #ECECEC;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__list {
+    display: flex;
+    margin-left: 92px;
+    gap: 50px;
+}
+
+.nav__link {
+    position: relative;
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--primary-headlines-color);
+    text-decoration: none;
+    line-height: 1.14;
+    font-weight: 500;
+}
+
+.nav__address {
+    display: flex;
+    margin-left: auto;
+    gap: 30px;
+}
+
+.nav__data {
+    display: flex;
+    align-items: center;
+
+    color: var(--text-color);
+    text-decoration: none;
+    line-height: 1.14;
+    font-weight: 500;
+    transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.nav__icon {
+    margin-right: 10px;
+    fill: var(--text-color);
+    transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+
+.nav__link:hover,
+.nav__link:focus,
+.nav__data:hover .nav__icon,
+.nav__data:focus .nav__icon {
+
+    color: var(--interactive-color);
+    fill: var(--interactive-color);
+    transition: fill var(--transition-duration) var(--transition-timing-function),
+        color var(--transition-duration) var(--transition-timing-function);
+}
+// Не бачу сенсу виносити ці ховери та фокуси під конкатенацію, бо це збільшить код, саме в цьому випадку, в інших використав
